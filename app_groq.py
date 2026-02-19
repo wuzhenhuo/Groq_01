@@ -10,7 +10,7 @@ def make_api_call(messages, max_tokens, is_final_answer=False):
     for attempt in range(3):
         try:
             response = client.chat.completions.create(
-                model="llama-3.1-70b-versatile",
+                model="llama-3.3-70b-versatile",
                 messages=messages,
                 max_tokens=max_tokens,
                 temperature=0.2,
