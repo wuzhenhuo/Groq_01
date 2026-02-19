@@ -10,7 +10,7 @@ load_dotenv()
 
 # Get configuration from .env file
 PERPLEXITY_API_KEY = os.getenv("PERPLEXITY_API_KEY")
-PERPLEXITY_MODEL = os.getenv("PERPLEXITY_MODEL", "llama-3.1-sonar-small-128k-online")
+PERPLEXITY_MODEL = os.getenv("PERPLEXITY_MODEL", "Sonar Pro")
 
 if not PERPLEXITY_API_KEY:
     raise ValueError("PERPLEXITY_API_KEY is not set in the .env file")
